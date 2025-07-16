@@ -922,7 +922,7 @@ if(NOT USE_SYSTEM_CURL)
             target_link_libraries(3rdparty_curl INTERFACE ${LIBIDN2})
         endif()
     endif()
-    target_link_libraries(3rdparty_curl INTERFACE 3rdparty_openssl)
+    target_link_libraries(3rdparty_curl INTERFACE 3rdparty_openssl zstd)
 endif()
 list(APPEND Open3D_3RDPARTY_PRIVATE_TARGETS_FROM_CUSTOM Open3D::3rdparty_curl Open3D::3rdparty_openssl)
 
